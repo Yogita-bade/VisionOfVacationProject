@@ -1,0 +1,23 @@
+<br>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <form (ngSubmit)="bookNow()">
+        <div class="form-group">
+          <input type="email" class="form-control" name="cemail" id="email" placeholder="Your Email ID" [(ngModel)]="book.cemail">
+        </div>
+        <div class="form-group">
+          <input type="number" class="form-control" name="noa" placeholder="No of People(above age 10)" [(ngModel)]="noa">
+        </div>
+        <div class="form-group">
+          <input type="number" class="form-control" name="noc" placeholder="No of People(below age 10)" [(ngModel)]="noc">
+        </div>
+        <br>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+<br>
+<br>
